@@ -2,11 +2,12 @@
 
 Infrastructure as Code (IaC) recipe for deploying to DigitalOcean using Terraform Cloud and GitHub Actions.
 
-Requirements:
+**Requirements:**
 
 - DigitalOcean account
 - GitHub account
 - Terraform Cloud account
+    - Workspace with API-driven workflow
 
 ## Usage
 
@@ -14,11 +15,11 @@ Fork this repository and configure your repo (see [configuration section](#confi
 
 The [Release Workflow](./.github/workflows/release.yaml) will deploy a single placeholder droplet.
 
-Please remember to update the LICENSE to fit your project's requirement.
+Please remember to update the [LICENSE](./LICENSE) to fit your project's requirement.
 
 ### Configuration
 
-The following inputs are passed from GitHub Secrets to Terraform via GitHub Actions:
+The following inputs are expected to be in GitHub Secrets, and will be passed to Terraform via GitHub Actions:
 
 | Name                         | Description                                                       |
 | ---------------------------- | ----------------------------------------------------------------- |
